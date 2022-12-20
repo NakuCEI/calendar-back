@@ -25,7 +25,7 @@ app.use(express.json());
 
 /* RUTAS */
 app.use('/api/auth', require('./routes/authRoutes'));
-// TODO calendarRoutes
+app.use('/api/events', require('./routes/calendarRoutes'));
 
 /* PONER EXPRESS A LA ESCUCHA */
 app.listen(port,()=>{
